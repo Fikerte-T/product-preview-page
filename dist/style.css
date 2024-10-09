@@ -760,8 +760,8 @@ video {
     width: 50%;
   }
 
-  .md\:max-w-\[40rem\] {
-    max-width: 40rem;
+  .md\:max-w-\[38rem\] {
+    max-width: 38rem;
   }
 
   .md\:flex-row {
