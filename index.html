@@ -5,32 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="stylesheet" href="dist/style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Product preview card component</title>
 </head>
 <body>
 
-  Perfume
+  <main class="min-h-svh max-w-full bg-cream font-sans flex items-center justify-center">
+    <div class="max-w-80 h-auto bg-white rounded-lg flex flex-col md:flex-row md:max-w-[40rem]">
+      <div class="md:w-1/2 border">
+        <picture>
+          <source class="max-w-full h-full rounded-none" srcset="images/image-product-desktop.jpg" media="(min-width: 768px)">
+          <img class="max-w-full h-auto rounded-t-lg md:rounded-r-none md:rounded-l-lg" src="images/image-product-mobile.jpg">  
+        </picture>
+      </div>
+      <div class="p-6 md:w-1/2 md:p-9 md:flex md:flex-col md:justify-between">
+        <span class="font-sans text-darkgrayishblue uppercase text-xs tracking-[0.35em]">Perfume</span>
+        <h2 class="font-serif font-bold text-3xl text-verydarkblue my-2 md:text-4xl">Gabrielle Essence Eau De Parfum</h2>
+        <p class="text-darkgrayishblue my-2 md:my-2 text-[0.9rem] leading-relaxed">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+        <div class="my-4 flex justify-start items-center"><span class="font-serif text-3xl text-darkcyan font-bold">$149.99</span>
+          <span class="text-darkgrayishblue line-through px-4 text-sm align-middle"> $169.99</span></div>
+        <button class="flex items-center justify-center bg-darkcyan text-white rounded-lg py-3 px-7 font-semibold w-full">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="h-5 w-5 mr-3">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+          </svg>
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </main>
 
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
+
